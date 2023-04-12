@@ -1,0 +1,188 @@
+/*
+    Global styles for all components of the website.
+
+    index.css only pertains to index.js, which is the
+    entirety of the website.
+*/
+.home-bg {
+  margin-top: 90px;
+  width: 100%;
+}
+.home-content-title {
+  text-align: center;
+}
+.home-content-introduction {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px auto 25px auto;
+}
+.home-content-description {
+  width: 100%;
+  height: 100%;
+}
+.home-content-animal {
+  text-align: center;
+  font-size: 40px;
+  margin: 25px auto 25px auto;
+}
+.zodiac-container {
+  margin-top: 5.5rem;
+}
+.box {
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid > div {
+  flex-basis: calc(20% - 40px);
+}
+
+/* Toolbar component */
+.toolbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background:#DADADA;
+  height: 90px;
+  z-index: 1;
+}
+
+.toolbar_navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+
+.toolbar_logo img {
+  margin-left: 2rem;
+  border-radius: 10em;
+  max-width: 4.2em;
+  max-height: 4.2em;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar_navigation-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.toolbar_navigation-items li {
+  padding: 0 3.7rem;
+  color: black;
+}
+
+.toolbar_navigation-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.toolbar_navigation-items a:hover,
+.toolbar_navigation-items a:active {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .toolbar_navigation-items {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+  .toolbar_toggle-button {
+      display: none;
+  }
+
+  .toolbar_logo {
+      margin-left: 0;
+  }
+}
+/* End of Toolbar */
+
+.zodiac-animal-info-container {
+  margin-top: 100px;
+}
+
+.zodiac-animal-info-img {
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 769px) {
+  .zodiac-animal-info-img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+.zodiac-animal-info-name {
+  color: #000;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.zodiac-animal-info-description {
+  color: #000;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 150;
+  margin-top: 2.5%;
+}
+
+.zodiac-animal-info-years {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.border {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.auth {
+  overflow: hidden;
+  display: block;
+  width: 75%;
+  margin: 300px auto 700px auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.form {
+  width: 75%;
+  margin: 150px auto 100px auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  color:#ffffff;
+  font-size: 14;
+  background-color: #2b2b2b;
+  padding: 10px;
+}
